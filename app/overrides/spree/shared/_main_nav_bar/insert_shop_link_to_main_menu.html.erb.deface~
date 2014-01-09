@@ -1,0 +1,11 @@
+<!-- insert_after '#home-link' -->
+
+<li id="shop-link"><%= link_to Spree.t(:Bridal_Silk), spree.products_path %>
+  
+</li>
+<li id="shop-link"><%= link_to Spree.t(:Wedding_Sarees), spree.products_path %>
+  
+</li>
+<li id="shop-link"><%= link_to Spree.t(:Party_Sarees), spree.products_path %>
+
+</li>
