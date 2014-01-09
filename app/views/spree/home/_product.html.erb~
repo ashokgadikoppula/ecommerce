@@ -1,7 +1,6 @@
 <li id="product_<%= product.id %>" class="columns four" data-hook="featured_products_list_item">
 <div class="product-image">
-  <%#= link_to product_image(product), product %>
-<%=image_tag("s1.jpg")%></br>
+  <%= link_to product_image(product), product %>
 </div>
 <%= link_to truncate(product.name, :length => 50), product, :class => 'product-name', :title => product.name %>
 <div class="product-sku">
