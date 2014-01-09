@@ -1,0 +1,53 @@
+<footer id="footer" class="twenty columns" data-hook>
+  <div class="container">
+    
+     <div class="three columns">
+      <h5>How It Works</h5>
+       All Major Credit and Debit Cards are accepted. We also Accept Payment by Internet Banking.Cash on Delivary and Equated Monthly Installments(EMI)
+    </div>
+    
+    
+    <div class="three columns">
+      <h5>Help</h5>
+      <ul>
+        <li><a href="/products">Payments</a></li>
+        <li><a href="/products">Saved Cards</a></li>
+        <li><a href="/products">Shipping</a></li>
+        <li><a href="/products">Cancellation And Returns</a></li>
+        <li><a href="/products">FAQ</a></li>      
+      </ul>
+    </div>
+    
+    <div class="three columns">
+      <h5>Kanchi Silks</h5>
+
+      <ul>
+        <li><a href="/products">About</a></li>
+        <li><a href="/products">Contact</a></li>
+        <li><a href="/products">Terms And Conditions</a></li>
+        <li><a href="/products">Affiliated Programme</a></li>
+        <li><a href="/products">Privacy Policy</a></li>
+      </ul>
+    </div>
+    
+    <div class="three columns">
+      <h5>Get Social</h5>
+       <ul>
+        <li><a href="/products">Follow Us on Twiiter</a></li>
+        <li><a href="/products">Like Us on Facebook</a></li>
+        <li><a href="/products">Google+</a></li>
+        
+      </ul>
+    </div>
+ <div class="four columns">
+      <h5>Newsletter SignUp</h5>
+
+        This website is <strong>NOT</strong> a real store, 
+        it's a fully working demo application for 
+        <a href="http://spreecommerce.com" target="_blank">Spree Commerce</a>. 
+        Please feel free to play around, but don't submit 
+        any information you would not consider public!
+    </div>
+    
+  </div>
+</footer>
