@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140109105103) do
+ActiveRecord::Schema.define(version: 20140110114554) do
 
   create_table "spree_activators", force: true do |t|
     t.string   "description"
@@ -236,6 +236,27 @@ ActiveRecord::Schema.define(version: 20140109105103) do
   add_index "spree_orders", ["completed_at"], name: "index_spree_orders_on_completed_at"
   add_index "spree_orders", ["number"], name: "index_spree_orders_on_number"
   add_index "spree_orders", ["user_id"], name: "index_spree_orders_on_user_id"
+
+  create_table "spree_pages", force: true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.string   "slug"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "show_in_header",           default: false, null: false
+    t.boolean  "show_in_footer",           default: false, null: false
+    t.string   "foreign_link"
+    t.integer  "position",                 default: 1,     null: false
+    t.boolean  "visible",                  default: true
+    t.string   "meta_keywords"
+    t.string   "meta_description"
+    t.string   "layout"
+    t.boolean  "show_in_sidebar",          default: false, null: false
+    t.string   "meta_title"
+    t.boolean  "render_layout_as_partial", default: false
+  end
+
+  add_index "spree_pages", ["slug"], name: "index_spree_pages_on_slug"
 
   create_table "spree_payment_methods", force: true do |t|
     t.string   "type"
@@ -673,6 +694,24 @@ ActiveRecord::Schema.define(version: 20140109105103) do
 
   add_index "spree_variants", ["product_id"], name: "index_spree_variants_on_product_id"
   add_index "spree_variants", ["sku"], name: "index_spree_variants_on_sku"
+
+  create_table "spree_wished_products", force: true do |t|
+    t.integer  "variant_id"
+    t.integer  "wishlist_id"
+    t.text     "remark"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_wishlists", force: true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "access_hash"
+    t.boolean  "is_private",  default: true,  null: false
+    t.boolean  "is_default",  default: false, null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "spree_zone_members", force: true do |t|
     t.integer  "zoneable_id"

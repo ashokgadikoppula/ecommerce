@@ -4,8 +4,8 @@
       <% @slider_products.each do |product| %>
         <li>
           <div class="product-image">
-            <%#= link_to product_image(product), product %>
-		<%=image_tag("s1.jpg")%></br>
+            <%= link_to product_image(product), product %>
+		<%#=image_tag("s1.jpg")%></br>
           </div>
           
 	<div class="product-info">
